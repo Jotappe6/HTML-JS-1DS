@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa I</title>
+    <title>Calculadora IMC</title>
 </head>
 <body>
     <script>
-        function pulalinha(){
+    function pulalinha(){
             document.write("<br><br>")
         }
         
@@ -18,13 +18,13 @@
 
 
         }
-        
-        
-        
-        
-        document.write('Meu nome e João Pedro, minha idade é:' + (2024 - 2007))
-        document.write('<br><br>')
-        document.write('O nome do meu colega é Bruno, a idade dele é: ' + (2024 - 2009))
+        function calculadoraIMC(peso, altura){
+            return imc = peso/(altura*altura)
+        }
+
+        let imcJoao = calculadoraIMC(53, 1.70)
+
+        motra('O IMC de Joao é:'+ imcJoao)
     </script>
 </body>
 </html>
