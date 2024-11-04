@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pontuação de Time</title>
 </head>
 <body>
+    <script>
+function pulalinha(){
+            document.write("<br><br>")
+        }
+        
+        function mostra(texto){
+            document.write(texto)
+            pulalinha()
+
+
+        }
+    mostra('Número de pontos do meu time no Brasileirão')
+let nomeTime = prompt('Qual o nome do seu time?')
+let vitorias = prompt('Quantas vitórias o seu time obteve durante o campeonato?')
+let empates = prompt('Quantos empates o seu time teve?')
+let derrotas = prompt('Quantas vezes seu time perdeu?')
+let pontucao = parseInt(vitorias * 3 ) + parseInt(empates)
+    mostra(`O ${nomeTime} obteve um total de ${pontucao}pontos`)
     
+    </script>
 </body>
 </html>
